@@ -19,14 +19,6 @@ class Solution {
         }
 
         StringBuilder ret = new StringBuilder();
-//        for (Character ch: heap)
-//        {
-//            int freq = map.get(ch);
-//            for (int i = 0; i < freq; i ++)
-//            {
-//                ret.append(ch);
-//            }
-//        }
 
         while (!heap.isEmpty())
         {
