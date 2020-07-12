@@ -12,7 +12,6 @@ class Solution {
                 (n1, n2) -> map.get(n2) - map.get(n1)
         );
 
-//        heap.addAll(map.keySet());
         for (char i: map.keySet())
         {
             heap.offer(i);
@@ -20,6 +19,9 @@ class Solution {
 
         StringBuilder ret = new StringBuilder();
 
+
+        // Do not just traverse. Traverse and poll.
+        // PriorityQueue only ensures the first one to be the largest/smallest.
         while (!heap.isEmpty())
         {
             Character ch = heap.poll();
